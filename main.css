@@ -17,59 +17,33 @@ header{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 70%;
+    gap: 60%;
 }
 
 header nav a{
-    margin: 0px 10px 0px 10px;
+    margin: 0px 20px 0px 20px;
     font-size: 18px;
     color: white;
     text-transform: uppercase;
 }
 
 header img{
-    width: 80px;
+    width: 130px;
     height: 80px;
-    margin: 10px;
+    margin: 10px 10px 10px 4rem;
 }
 
 
 section{
     margin-top: 5rem;
 }
+
 article{
     margin-left: 20px;
 }
 
 .infos{
     height: 400px;
-}
-
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-}
-
-.card{
-    width: 360px;
-    height: 340px;
-    background: linear-gradient(45deg, #FB2576 0%, #3F0071 100%);
-    margin: 10px 10px 50px 10px
-}
-
-footer {
-    background-color: #1E1E1E;
-    height: 200px;
-}
-
-.mg-lt4{
-    margin-left: 4rem;
-}
-
-.mg-tp4{
-    margin-top: 4rem;
 }
 
 article{
@@ -101,6 +75,7 @@ a.buttonP{
     align-items: center;
     gap: 30px;
 }
+
 a span{
     text-decoration: none;
     text-transform: uppercase;
@@ -108,6 +83,7 @@ a span{
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .buttonP {
     display: block;
     border: 2px solid white;
@@ -115,4 +91,75 @@ a span{
     height: 30px;
     background: linear-gradient(45deg, #9747FF 40% , #C73EF9 100%);
     border-radius: 20px;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.card {
+    width: 360px;
+    height: 340px;
+    margin: 10px;
+    display: flex;
+    column-gap: 25px;
+    flex-direction: column;
+    background: linear-gradient(45deg, #FB2576 0%, #3F0071 100%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.card span{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.card p{
+    width: 290px;
+    height: 60px;
+    color: white;
+    text-align: justify;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.card svg{
+    position: relative;
+    top: 170px;
+    left: 320px;
+}
+
+.cabeçalho{
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.card .ref{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #1E1E1E;
+    height: 200px;
+}
+
+.mg-lt4{
+    margin-left: 4rem;
+}
+
+.mg-tp4{
+    margin-top: 4rem;
 }
