@@ -12,12 +12,14 @@ body {
 }
 
 header{
+    gap: 60%;
+    width: 100%;
     height: auto;
-    background-color: #1E1E1E;
     display: flex;
+    position: fixed;
     flex-wrap: wrap;
     align-items: center;
-    gap: 60%;
+    background-color: #1E1E1E;
 }
 
 header nav a{
@@ -33,6 +35,13 @@ header img{
     margin: 10px 10px 10px 4rem;
 }
 
+header a:hover{
+    color: #9747FF;
+}
+
+main{
+    padding: 5px;
+}
 
 section{
     margin-top: 5rem;
@@ -43,7 +52,7 @@ article{
 }
 
 .infos{
-    height: 400px;
+    height: 500px;
 }
 
 article{
@@ -54,14 +63,9 @@ article{
     padding-top: 8rem;
     margin-bottom: 10px;
     font-size: 44px;
-    color: white;
+    color: rgb(233, 141, 141);
 }
 
-.importante{
-    background: -webkit-linear-gradient(45deg, #FB2576 0%, #3F0071 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 .texto {
     font-size: 20px;
@@ -154,6 +158,64 @@ a span{
 footer {
     background-color: #1E1E1E;
     height: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+}
+
+footer img{
+    width: 240px;
+    height: 160px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+footer nav{
+    max-width: 700px;
+}
+
+footer nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    margin: 40px;
+}
+
+footer nav ul a{
+    color: white;
+    font-size: 18px;
+}
+
+footer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+form label{
+    margin-bottom: 10px;
+}
+
+form input{
+    max-width: 200px;
+    outline: none;
+    height: 30px;
+    border-radius: 30px;
+    border: 3px solid #3F0071;
+    padding: 10px 20px;
+}
+
+input[type=email]::placeholder{
+    color: #3F0071;
+    
+}
+
+input[type=email] {
+    color: #3F0071;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .mg-lt4{
