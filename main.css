@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Popins", sans-serif;
+    
+}
+
+body {
+    background: linear-gradient(45deg, #C73EF9 40%, #9747FF 100%);
+}
+
+header{
+    height: auto;
+    background-color: #1E1E1E;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 70%;
+}
+
+header nav a{
+    margin: 0px 10px 0px 10px;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+
+header img{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+
+section{
+    margin-top: 5rem;
+}
+article{
+    margin-left: 20px;
+}
+
+.infos{
+    height: 400px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.card{
+    width: 360px;
+    height: 340px;
+    background: linear-gradient(45deg, #FB2576 0%, #3F0071 100%);
+    margin: 10px 10px 50px 10px
+}
+
+footer {
+    background-color: #1E1E1E;
+    height: 200px;
+}
+
+.mg-lt4{
+    margin-left: 4rem;
+}
+
+.mg-tp4{
+    margin-top: 4rem;
+}
+
+article{
+    width: 600px;
+}
+
+.titulo{
+    padding-top: 8rem;
+    margin-bottom: 10px;
+    font-size: 44px;
+    color: white;
+}
+
+.importante{
+    background: -webkit-linear-gradient(45deg, #FB2576 0%, #3F0071 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.texto {
+    font-size: 20px;
+    text-indent: 15px;
+    color: white;
+    text-align: justify;
+}
+
+a.buttonP{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+a span{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.buttonP {
+    display: block;
+    border: 2px solid white;
+    width: 420px;
+    height: 30px;
+    background: linear-gradient(45deg, #9747FF 40% , #C73EF9 100%);
+    border-radius: 20px;
+}
