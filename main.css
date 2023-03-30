@@ -7,6 +7,11 @@
     
 }
 
+:root{
+    --bk: #1E1E1E;
+    --wt: #fff;
+}
+
 ::-webkit-scrollbar{
     width: 15px;
 }
@@ -26,11 +31,20 @@ body {
 
 header{
     width: 100%;
-    display: flex;
     position: fixed;
+    background-color: #1E1E1E;
+    z-index: 10;
+}
+
+nav{
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1E1E1E;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
 }
 
 header nav a{
@@ -48,9 +62,47 @@ header img{
     margin: 10px 10px 10px 4rem;
 }
 
+.menu{
+    display: none;
+    cursor: pointer;
+}
+
 header a:hover{
     color: #9747FF;
     opacity: 0.7;
+}
+
+@media(max-width:900px) {
+    
+    body{
+        overflow-x: hidden;
+    }
+
+    .links{
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 50vh;
+        height: 92vh;
+        background-color: var(--bk);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+    
+    .links li{
+        margin-right: 30px;
+        opacity: 0;
+    }
+
+    .menu{
+        display: block;
+    }
+}
+
+.links.active{
+    transform: translateX(0);
 }
 
 main{
@@ -61,28 +113,25 @@ section{
     margin-top: 5rem;
 }
 
-article{
-    margin-left: 20px;
-}
 
 .infos{
+    width: 700px;
     height: 500px;
 }
 
-article{
-    width: 600px;
-}
 
 .titulo{
     padding-top: 8rem;
-    margin-bottom: 10px;
-    font-size: 44px;
+    margin-bottom: 15px;
+    line-height: 105%;
+    font-size: 32px;
     color: white;
+    text-align: start;
 }
 
 .texto {
     font-size: 20px;
-    text-indent: 15px;
+    margin-top: 50px;
     color: white;
     text-align: justify;
 }
@@ -110,11 +159,29 @@ a span{
     border-radius: 20px;
 }
 
+@media(max-width:900px){
+    
+    section.inicio{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .infos{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+}
+
 
 .cards {
     margin-bottom: 2rem;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 45px;
     align-items: center;
     justify-content: center;
@@ -152,6 +219,7 @@ a span{
     position: relative;
     top: 170px;
     left: 320px;
+    z-index: 0;
 }
 
 .cabeçalho{
@@ -167,6 +235,12 @@ a span{
     height: 30px;
     margin-top: 20px;
     margin-left: 10px;
+}
+@media(max-width:1200px) {
+    .cards{
+        height: auto;
+        flex-direction: column;
+    }
 }
 
 footer {
@@ -192,7 +266,7 @@ footer nav{
 footer nav ul{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    justify-content: space-around;
     align-items: center;
     margin: 40px;
 }
@@ -233,8 +307,21 @@ input[type=email] {
     font-size: 16px;
 }
 
+@media(max-width:900px) {
+    footer{
+        flex-direction: column;
+        height: auto;
+        justify-content: space-around;
+        gap: 50px;
+    }
+}
+
 .mg-lt4{
     margin-left: 4rem;
+}
+
+.mg-rg4{
+    margin-right: 4rem;
 }
 
 .mg-tp4{
