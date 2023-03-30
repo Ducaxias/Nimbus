@@ -8,30 +8,37 @@
     <title>Nimbus</title>
 </head>
 <body>
-    <header>
-        <img src="src/logo.png" alt="logo">                
+    <header>                  
         <nav>
-            <ul>
-                <a href="#">Inicio</a>
-                <a href="#">Loja</a>
-                <a href="#">Contato</a>
+            <img src="src/logo.png" alt="logo">
+            <div class="menu">
+                <svg width="46" height="46" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12h18"></path>
+                    <path d="M3 6h18"></path>
+                    <path d="M3 18h18"></path>
+                  </svg>
+            </div>
+            <ul class="links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="loja.html">Loja</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="infos">
-            <article class="mg-lt4">
+        <section class="inicio">
+            <article class="infos">
                 <h1 class="titulo">Dale aqui é da <span class="importante">Nimbus</span> !</h1>
                 <p class="texto">A <span class="importante">Nimbus</span> é uma editora/livraria que tem como principal objetivo fomentar todo o processo de produção,
                     desenvolvimento, e venda de HQs e livros de autores brasileiros.</p>
+                    <a href="#" class="buttonP">
+                        <span>Venha conhecer nossos exemplares</span>
+                        <svg width="30" height="30" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                          </svg>
+                    </a>
             </article>
-                <a href="#" class="mg-lt4 mg-tp4 buttonP">
-                    <span>Venha conhecer nossos exemplares</span>
-                    <svg width="30" height="30" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 12h14"></path>
-                        <path d="m12 5 7 7-7 7"></path>
-                      </svg>
-                </a>
         </section>
         <section class="cards">
             <div class="card">
@@ -90,6 +97,7 @@
         <form action="" class="promocao">
             <label>Deseja receber nossas promoções?</label>
             <input type="email" name="email" placeholder="Digite seu email">
+            <button type="submit">Enviar</button>
         </form>
     </footer>
 </body>
