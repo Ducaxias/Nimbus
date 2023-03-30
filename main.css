@@ -117,6 +117,7 @@ section{
 .infos{
     width: 700px;
     height: 500px;
+    margin: 0px 70px;
 }
 
 
@@ -140,6 +141,7 @@ a.buttonP{
     display: flex;
     align-items: center;
     gap: 20px;
+    margin: 20px 0px;
 }
 
 a span{
