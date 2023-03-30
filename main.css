@@ -139,7 +139,7 @@ section{
 a.buttonP{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 a span{
@@ -168,11 +168,22 @@ a span{
     }
 
     .infos{
-        width: 400px;
+        width: 350px;
         display: flex;
         flex-direction: column;
         gap: 25px;
         align-items: center;
+        margin: 10px;
+    }
+
+    .buttonP {
+        display: block;
+        border: 2px solid white;
+        width: 320px;
+        height: 50px;
+        height: 30px;
+        background: linear-gradient(45deg, #9747FF 40% , #C73EF9 100%);
+        border-radius: 20px;
     }
 
 }
@@ -305,6 +316,15 @@ input[type=email] {
     color: #3F0071;
     font-weight: 600;
     font-size: 16px;
+}
+
+form button{
+    background: linear-gradient(45deg, #9747FF 40% , #C73EF9 100%);
+    color: var(--wt);
+    border: 2px solid white;
+    height: 30px;
+    border-radius: 15px;
+    margin: 10px 0px;
 }
 
 @media(max-width:900px) {
