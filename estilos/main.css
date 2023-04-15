@@ -1,0 +1,48 @@
+@import '_footer.css';
+@import '_header.css';
+@import '_main.css';
+@import '';
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Popins", sans-serif;
+    
+}
+
+:root{
+    --bk: #1E1E1E;
+    --wt: #fff;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg, #C73EF9 40%, #9747FF 100%) ;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    background: linear-gradient(45deg, #C73EF9 40%, #9747FF 100%);
+}
+
+
+.mg-lt4{
+    margin-left: 4rem;
+}
+
+.mg-rg4{
+    margin-right: 4rem;
+}
+
+.mg-tp4{
+    margin-top: 4rem;
+}
