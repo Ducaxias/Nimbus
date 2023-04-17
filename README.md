@@ -11,7 +11,7 @@ Nimbus is a publisher and book store that aims at the greater penetration of boo
 
 ## Documentation
 
-[Documentation](https://#)
+[Documentation](https://https://docs.google.com/document/d/1z3x-5RzpLgsdLIsluvsKhqx7sBhiem7AWxD0C12MvaI/edit?usp=sharing)
 
 
 ## Authors
