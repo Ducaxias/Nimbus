@@ -93,10 +93,11 @@ footer nav div{
     font-size: 16px;  
     font-weight: bold;
     width: 171px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 footer nav ul{
+    display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: space-around;
@@ -143,6 +144,7 @@ input[type=email] {
     color: #3F0071;
     font-weight: 600;
     font-size: 16px;
+    caret-color: #3F0071;
 }
 
 form button{
