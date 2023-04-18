@@ -13,6 +13,8 @@ We accept different [types of contributions](https://#), including some that don
 
 [Documentation](https://docs.google.com/document/d/1z3x-5RzpLgsdLIsluvsKhqx7sBhiem7AWxD0C12MvaI/edit?usp=sharing)
 
+[Figma](https://#)
+
 
 ## Authors
 
