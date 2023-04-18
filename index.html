@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="index.html" target="">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="Index/imports.css">
+    <link rel="stylesheet" href="opmain.css">
     <title>Nimbus</title>
 </head>
 <body>
     <header>                  
         <nav>
-            <img src="src/logo.png" alt="logo">
+            <img src="src/logo.png"  class="logo">
             <div class="menu">
                 <svg width="46" height="40" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 12h18"></path>
@@ -30,8 +29,8 @@
     <main>
         <section class="inicio">
             <article class="infos">
-                <h1 class="titulo">Dale aqui é da <span class="importante">Nimbus</span> !</h1>
-                <p class="texto">A <span class="importante">Nimbus</span> é uma editora/livraria que tem como principal objetivo fomentar todo o processo de produção,
+                <h1 class="titulo">Dale aqui é da Nimbus !</h1>
+                <p class="texto">A Nimbus é uma editora/livraria que tem como principal objetivo fomentar todo o processo de produção,
                     desenvolvimento, e venda de HQs e livros de autores brasileiros.</p>
                     <a href="#" class="buttonP">
                         <span>Venha conhecer nossos exemplares</span>
@@ -42,7 +41,7 @@
                     </a>
             </article>
         </section>
-        <section class="cards">
+        <section class="produtos">
             <div class="card">
                 <div class="cabeçalho">
                     <img src="src/book.png" alt="HQs" class="ref">
@@ -83,7 +82,7 @@
                 </a>
             </div>
         </section>
-        <section class="HorariodeFuncionameto">
+        <section class="contato" id="">
             <div class="Horarios">
                 <p class="txt1">Horário de Atendimento</p>
                 <p class="txt1">Atendimento de Vendas:</p>
@@ -91,7 +90,7 @@
                 <p class="txt1">Atendimento do Suporte:</p>
                 <p class="txt2">Segunda a sexta-feira das 08h30 às 18h</p>
             </div>
-            <div class="Serviços">
+            <div class="Servicos">
                 <div class="chat">
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="white">
                         <path d="M25 42.4107L27.325 43.75L31.9174 35.7143H38.3929C39.8137 35.7143 41.1763 35.1499 42.1809 34.1452C43.1856 33.1406 43.75 31.7779 43.75 30.3571V11.6071C43.7502 10.9036 43.6117 10.2069 43.3426 9.55685C43.0734 8.90681 42.6788 8.31617 42.1813 7.81868C41.6838 7.32119 41.0932 6.92659 40.4432 6.65743C39.7931 6.38827 39.0964 6.24982 38.3929 6.25H11.6071C10.9036 6.24982 10.2069 6.38827 9.55685 6.65743C8.90681 6.92659 8.31617 7.32119 7.81868 7.81868C7.32119 8.31617 6.92659 8.90681 6.65743 9.55685C6.38827 10.2069 6.24982 10.9036 6.25 11.6071V30.3571C6.25 31.7779 6.81441 33.1406 7.81907 34.1452C8.82373 35.1499 10.1863 35.7143 11.6071 35.7143H23.6607V33.0357H11.6071C11.2552 33.0362 10.9067 32.9673 10.5815 32.8329C10.2563 32.6985 9.96076 32.5012 9.71193 32.2524C9.46309 32.0035 9.26581 31.708 9.13139 31.3828C8.99696 31.0576 8.92804 30.709 8.92857 30.3571V11.6071C8.92804 11.2552 8.99696 10.9067 9.13139 10.5815C9.26581 10.2563 9.46309 9.96076 9.71193 9.71193C9.96076 9.46309 10.2563 9.26581 10.5815 9.13139C10.9067 8.99696 11.2552 8.92804 11.6071 8.92857H38.3929C38.7448 8.92804 39.0933 8.99696 39.4185 9.13139C39.7437 9.26581 40.0392 9.46309 40.2881 9.71193C40.5369 9.96076 40.7342 10.2563 40.8686 10.5815C41.003 10.9067 41.072 11.2552 41.0714 11.6071V30.3571C41.072 30.709 41.003 31.0576 40.8686 31.3828C40.7342 31.708 40.5369 32.0035 40.2881 32.2524C40.0392 32.5012 39.7437 32.6985 39.4185 32.8329C39.0933 32.9673 38.7448 33.0362 38.3929 33.0357H30.3571L25 42.4107ZM19.6423 14.2864C19.1125 14.2864 18.5946 14.4435 18.1541 14.7379C17.7137 15.0322 17.3703 15.4505 17.1676 15.94C16.9649 16.4294 16.9118 16.968 17.0152 17.4876C17.1185 18.0072 17.3736 18.4844 17.7482 18.859C18.1228 19.2336 18.6001 19.4888 19.1197 19.5921C19.6393 19.6955 20.1779 19.6424 20.6673 19.4397C21.1568 19.2369 21.5751 18.8936 21.8694 18.4531C22.1638 18.0126 22.3209 17.4948 22.3209 16.965C22.3244 16.6123 22.2576 16.2623 22.1243 15.9357C21.9909 15.6091 21.7937 15.3124 21.5443 15.063C21.2949 14.8135 20.9981 14.6164 20.6715 14.483C20.3449 14.3497 19.995 14.2829 19.6423 14.2864ZM28.8719 14.7379C29.3124 14.4435 29.8303 14.2864 30.3601 14.2864C30.7128 14.2829 31.0627 14.3497 31.3893 14.483C31.7159 14.6164 32.0126 14.8135 32.2621 15.063C32.5115 15.3124 32.7087 15.6091 32.842 15.9357C32.9754 16.2623 33.0422 16.6123 33.0386 16.965C33.0386 17.4948 32.8815 18.0126 32.5872 18.4531C32.2929 18.8936 31.8745 19.2369 31.3851 19.4397C30.8957 19.6424 30.3571 19.6955 29.8375 19.5921C29.3179 19.4888 28.8406 19.2336 28.466 18.859C28.0914 18.4844 27.8363 18.0072 27.7329 17.4876C27.6296 16.968 27.6826 16.4294 27.8854 15.94C28.0881 15.4505 28.4314 15.0322 28.8719 14.7379ZM20.562 27.9051C21.9252 28.6364 23.4485 29.0185 24.9955 29.0171C26.5425 29.0185 28.0657 28.6364 29.429 27.9051C30.7922 27.1738 31.953 26.1161 32.8075 24.8265L30.5763 23.3439C29.9655 24.265 29.1362 25.0205 28.1624 25.5432C27.1887 26.0659 26.1007 26.3394 24.9955 26.3394C23.8903 26.3394 22.8023 26.0659 21.8285 25.5432C20.8548 25.0205 20.0255 24.265 19.4147 23.3439L17.1834 24.8265C18.0379 26.1161 19.1987 27.1738 20.562 27.9051Z"/>
@@ -158,7 +157,7 @@
                 </div>
             </div>
             <div class="nav">
-                <nav class="Institucional-">
+                <nav class="Institucional">
                     <div>Institucional</div>    
                     <ul>
                         <a href="sobre-a-nimbus.html">Sobre a Nimbus</a>
