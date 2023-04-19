@@ -1,5 +1,3 @@
-@import "responsividade.css";
-
 * {
     padding: 0;
     margin: 0;
@@ -95,6 +93,11 @@ main{
 
 section{
     margin: 2rem 2rem;
+}
+
+.inicio{
+   margin-left: 4rem;
+   margin-top: 4rem;
 }
 
 .infos{
@@ -213,12 +216,15 @@ a span{
 }
 
 .contato{
-    display: flex;
-    flex-direction: row;
-    gap: 200px;
-    margin-left: 70px;
-    margin-bottom: 40px;
     border: 2px dashed var(--wt);
+    background-color: var(--bk);
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 40px;
+    margin: 4rem;
+    display: flex;
+    flex-direction: row;      
+    justify-content: space-between;
 }
 
 .Horarios{
@@ -235,7 +241,7 @@ a span{
     color: var(--wt);
     text-transform: uppercase;
     font-weight: bold;
-    margin: 20px 0px 20px 15px;
+    margin: 20px 20px 0px 15px;
 }
 
 .Servicos svg{
@@ -251,7 +257,8 @@ a span{
 }
 
 .Servicos div:hover{
-    border: 2px solid var(--wt);    
+    border: 2px solid var(--wt);  
+    background-color: var(--rx); 
 }
 
 .txt1{
@@ -435,6 +442,74 @@ form button{
 }
 
 @media(max-width:900px) {
+    
+    body{
+        overflow-x: hidden;
+    }
+
+    header img{
+        width: 130px;
+        height: 80px;
+        margin: 10px;
+    }
+
+    .links{
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 50vh;
+        height: 100vh;
+        margin: 0;
+        gap: 0px;
+        background-color: var(--bk);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+    
+    .links li{
+        margin-left: 0px;
+        opacity: 1;
+    }
+
+    div.menu{
+        display: block;
+    }
+    
+    section.inicio{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .infos{
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .titulo{
+        padding-top: 8rem;
+        margin-bottom: 15px;
+        line-height: 105%;
+        font-size: 30px;
+        color: white;
+        text-align: start;
+    }
+    
+
+    .buttonP {
+        border: 2px solid white;
+        width: 320px;
+        height: 50px;
+        background: linear-gradient(45deg, #9747FF 40% , #C73EF9 100%);
+        border-radius: 20px;
+    }
+
     footer{
         flex-direction: column;
         height: auto;
@@ -449,5 +524,31 @@ form button{
         justify-content: space-around;
         gap: 50px;
     }
+}
+
+.links.active{
+    transform: translateX(0);
+}
+
+@media(max-width:1200px) {
     
+    .produtos{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .card{
+        width: 320px;
+        height: 280px;
+    }
+    
+    .card .bgCard{
+        background-color: var(--bkrx);
+        width: 320px;
+        height: 120px;
+    }
+
+    .contato{
+        flex-direction: column;
+    }
 }
