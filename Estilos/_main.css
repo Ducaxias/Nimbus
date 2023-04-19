@@ -5,16 +5,20 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    font-family: "Popins", sans-serif;
-    
+    font-family: "Georgia", "Lora", "Open Sans", "sans-serif";
 }
 
 :root{
-    --bk: #1E1E1E;
-    --wt: #ffffff;
     --rx: #9747FF;
+    --bkrx: #3F0071;
+    --wt: #ffffff;
+    --bk: #1E1E1E;
     --gradient: linear-gradient(45deg, #C73EF9 40%, #9747FF 100%);
-    --gradientCard: linear-gradient(45deg, #FB2576 0%, #3F0071 100%);
+    --gradientCard: linear-gradient(45deg, #FB2576 40%, #3F0071 100%);
+    --fonte-primaria: 'Georgia', sans-serif;
+    --fonte-secundaria: 'Lora', sans-serif;
+    --tamanho-fonte: 16px;
+    --largura-maxima: 1200px;
 }
 
 ::-webkit-scrollbar{
@@ -133,7 +137,7 @@ a span{
 .buttonP {
     display: block;
     border: 2px solid var(--wt);
-    width: 510px;
+    width: 520px;
     height: 30px;
     background: var(--gradient);
     border-radius: 20px;
@@ -155,46 +159,57 @@ a span{
     display: flex;
     column-gap: 25px;
     flex-direction: column;
-    background: var(--gradientCard);
+    background: var(--bk);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
-.card span{
-    font-size: 18px;
-    text-transform: uppercase;
-    color: var(--wt);
-    padding-left: 10px;
-    padding-top: 20px;
 }
 
 .card p{
     width: 290px;
     height: 60px;
     color: var(--wt);
-    text-align: justify;
+    text-align: left;
     padding-left: 20px;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
-.card .ref{
-    width: 30px;
-    height: 30px;
-    margin-top: 20px;
-    margin-left: 10px;
-}
-
-.card svg{
+.card .controle{
+    width: 40px;
+    height: 40px;
     position: relative;
-    top: 170px;
-    left: 320px;
+    top: 2px;
+    left: 5px;
 }
 
-.cabeçalho{
-    display: flex;
-    flex: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
+.card .doll{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.card .book{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 2px;
+    left: 7px;
+}
+
+.card .bgCard{
+    background-color: var(--bkrx);
+    width: 360px;
+    height: 150px;
+}
+
+#mascaraCard{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -25px;
+    left: 20px;
+    background-color: var(--wt);
+    border-radius: 50%;
 }
 
 .contato{
@@ -203,11 +218,13 @@ a span{
     gap: 200px;
     margin-left: 70px;
     margin-bottom: 40px;
+    border: 2px dashed var(--wt);
 }
 
 .Horarios{
     text-align: left;
     font-size: 14px;
+    margin: 20px 0px 20px 15px;
 }
 
 .Servicos{
@@ -218,6 +235,7 @@ a span{
     color: var(--wt);
     text-transform: uppercase;
     font-weight: bold;
+    margin: 20px 0px 20px 15px;
 }
 
 .Servicos svg{
@@ -229,6 +247,7 @@ a span{
     height: 105px;
     box-sizing: border-box;
     border-radius: 10px;
+    transition: border 0.1s ease-in-out;
 }
 
 .Servicos div:hover{
@@ -328,7 +347,7 @@ footer .RedeSocial svg{
 }
  
 footer .RedeSocial a:hover{
- background-color: var(--wt);
+    background-color: var(--wt);
 }
 
 footer nav{
