@@ -10,7 +10,7 @@ See [the contributing guide](https://#) for detailed instructions on how to get 
 
 We accept different [types of contributions](https://#), including some that don't require you to write a single line of code.
 
-# Documentation
+## Documentation
 
 [Documentation](https://docs.google.com/document/d/1z3x-5RzpLgsdLIsluvsKhqx7sBhiem7AWxD0C12MvaI/edit?usp=sharing)
 
