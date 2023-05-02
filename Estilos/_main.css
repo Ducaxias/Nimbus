@@ -200,7 +200,7 @@ a span{
 }
 
 .card .bgCard{
-    background-color: var(--bkrx);
+    background-color: var(--rx);
     width: 360px;
     height: 150px;
 }
