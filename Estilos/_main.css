@@ -484,7 +484,7 @@ form button{
     }
 
     .infos{
-        max-width: 600px;
+        width: 400px;
         display: flex;
         flex-direction: column;
         gap: 25px;
