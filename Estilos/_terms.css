@@ -70,6 +70,12 @@ ul{
     margin-right: 10px;
 }
 
+li::first-letter{
+    text-transform: capitalize;
+}
+
+
+
 a{
     color: var(--wt);
     transition: 0.3s;
@@ -128,6 +134,46 @@ main p{
     margin: 10px 10px 20px 10px;
     font-size: 1.15rem;
     letter-spacing: 0.15px;
+}
+
+main ol{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    counter-reset: my-couter;
+}
+
+main ol li{
+    counter-increment: my-couter;
+    margin: 15px 10px;
+    
+}
+
+main ol li::before{
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    color: var(--rx);
+    font-weight: 600;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-flex;
+    box-sizing: border-box;
+    justify-content: center;
+    border: 2px solid var(--rx);
+    content: counter(my-couter, lower-alpha);
+}
+
+main ul{
+    display: block;
+    margin: 15px 10px;
+    list-style: ;
+}
+
+main ul li{
+    text-transform: initial;
+    margin: 15px 0px 15px 0px;
 }
 
 section{
