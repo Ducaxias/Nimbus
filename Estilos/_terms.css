@@ -85,6 +85,28 @@ main{
     padding: 5px;
 }
 
+main span{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--bk);
+}
+
+main h1{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--bk);
+    margin: 30px 10px 30px 10px;
+}
+
+main h1::after{
+    content: '';
+    width: 200px;
+    height: 6px;
+    background:var(--rx);
+    display: block;
+    margin: 15px 10px 15px 10px;
+}
+
 main h2{
     font-size: 2rem;
     margin-bottom: 1.5rem;
@@ -111,7 +133,6 @@ main p{
 section{
     margin: 2rem;
     padding: 10px;
-    height: 400px;
     box-sizing: border-box;
     border-radius: 10px;
     background: var(--wt);
