@@ -79,6 +79,38 @@ a{
     color: var(--wt);
     transition: 0.3s;
     letter-spacing: 3px;
+    font-weight: bold;
+}
+
+a.importante{
+    color: var(--rx);
+    letter-spacing: 0.15px;
+} 
+
+a.importante::after{
+    content:'';
+    width: 0px;
+    height: 3px;
+    position: absolute;
+    left: calc(68rem + 25px);
+    border-radius: 2px;
+    right: 0px;
+    display: block;
+    background-color: var(--rx);
+}
+
+a.importante:hover::after{
+    animation: hoverefect 0.5s ease forwards;
+}
+
+
+@keyframes hoverefect{
+    from{
+        width: 0px;
+    }
+    to{
+        width: 80px;
+    }
 }
 
 header a:hover{
@@ -91,8 +123,10 @@ main{
 }
 
 main span{
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 10px;
     color: var(--bk);
 }
 
@@ -107,13 +141,27 @@ main h1::after{
     content: '';
     width: 200px;
     height: 6px;
+    border-radius: 10px;
     background:var(--rx);
     display: block;
     margin: 15px 10px 15px 10px;
 }
 
+main article.disclaimer:hover h1::after{
+    animation: h1hover 1s 0.5s ease-in forwards;
+}
+
+@keyframes h1hover{
+    from{
+        width: 200px;
+    }
+    to{
+        width: 475px;
+    }
+}
+
 main h2{
-    font-size: 2rem;
+    font-size: 1.75rem;
     margin-bottom: 1.5rem;
     color: var(--bk);
     margin: 30px 10px 30px 10px;
@@ -128,11 +176,31 @@ main h2::after{
     margin: 10px 0px 5px 0px ;
 }
 
+main h3{
+    font-size: 1.30rem;
+    margin-bottom: 1.5rem;
+    color: var(--bk);
+    margin: 30px 10px 30px 10px;   
+}
+
+main h4{
+    font-size: 1.10rem;
+    margin-bottom: 1.5rem;
+    color: var(--bk);
+    margin: 30px 10px 30px 10px;
+    width: auto;
+}
+
 main p{
     color: var(--bk);
     margin: 10px 10px 20px 10px;
     font-size: 1.15rem;
     letter-spacing: 0.15px;
+}
+
+main p.interacao{
+    margin-top: 20px;
+    font-size: 1.5rem;
 }
 
 main ol{
@@ -146,7 +214,6 @@ main ol{
 main ol li{
     counter-increment: my-couter;
     margin: 15px 10px;
-    
 }
 
 main ol li::before{
@@ -164,9 +231,23 @@ main ol li::before{
     content: counter(my-couter, lower-alpha);
 }
 
+main ol.garantia li, main ol.devolucao li{
+    list-style-type: decimal;
+    margin-left: 30px;
+}
+
+main ol.garantia li::before, main ol.devolucao li::before{
+    content: none;
+}
+
+main ol.garantia li::marker, main ol.devolucao li::marker{
+    color: var(--rx);
+    font-size: 1.15rem;
+}
+
 main ul{
     display: block;
-    margin: 15px 10px;
+    margin: 15px 0px 15px 30px;
     list-style-position: inside;
     list-style: circle;
 }
@@ -178,7 +259,7 @@ main ul li::marker{
 
 main ul li{
     text-transform: initial;
-    margin: 15px 0px 15px 0px;
+    margin: 15px 30px 15px 0px;
 }
 
 section{
@@ -189,7 +270,7 @@ section{
     background: var(--wt);
 }
 
-section.privacidade{
+section.boasvindas{
     margin-top: 7rem;
 }
 
