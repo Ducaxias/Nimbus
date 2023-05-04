@@ -3,6 +3,7 @@
 
 Nimbus is a publisher and book store that aims at the greater penetration of books and comics in the homes of Brazilian families.
 
+![ScreenShot](./Docs/HomeScreenShot.png)
 
 ## Contributing
 
