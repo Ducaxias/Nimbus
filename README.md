@@ -16,6 +16,15 @@ We accept different [types of contributions](https://#), including some that don
 
 [Figma](https://#)
 
+## Tools
+
+- HTML 
+- CSS
+- JavaScript
+
+## Concepts
+
+## Screenshots
 
 ## Authors
 
