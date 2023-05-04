@@ -96,10 +96,52 @@ main h2::after{
     content: '';
     width: 250px;
     height: 5px;
+    border-radius: 10px;
     background: var(--rx);
     display: block;
     margin: 10px 0px 5px 0px ;
 }
+
+main section.privacidade:hover h2::after{
+    content: '';
+    width: 250px;
+    height: 5px;
+    border-radius: 10px;
+    background: var(--rx);
+    display: block;
+    margin: 10px 0px 5px 0px ;
+    animation: o_o 1.5s forwards 1 0.25ms ease;
+}
+
+@keyframes o_o {
+    from{
+        width: 250px;
+    }
+    to{
+        width: 390px;
+    }
+}
+
+main section.segurança:hover h2::after{
+    content: '';
+    width: 250px;
+    height: 5px;
+    border-radius: 10px;
+    background: var(--rx);
+    display: block;
+    margin: 10px 0px 5px 0px ;
+    animation: ouo 1.5s forwards 0.25ms ease;
+}
+
+@keyframes ouo {
+    from{
+        width: 250px;
+    }
+    to{
+        width: 370px;
+    }
+}
+
 
 main p{
     color: var(--bk);
