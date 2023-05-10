@@ -1,7 +1,8 @@
 .banner {
     background-color: #eb1deb;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
+    padding-left: 10px;
 }
 
 .banner h1 {
