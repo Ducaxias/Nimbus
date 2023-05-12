@@ -7,9 +7,9 @@ Nimbus is a publisher and book store that aims at the greater penetration of boo
 
 ## Contributing
 
-See [the contributing guide](https://#) for detailed instructions on how to get started with our project.
+See [the contributing guide](./Docs/CONTRIBUTING.md) for detailed instructions on how to get started with our project.
 
-We accept different [types of contributions](https://#), including some that don't require you to write a single line of code.
+We accept different [types of contributions](./Docs/CONTRIBUTING.md), including some that don't require you to write a single line of code.
 
 ## Documentation
 
@@ -22,6 +22,7 @@ We accept different [types of contributions](https://#), including some that don
 - HTML 
 - CSS
 - JavaScript
+- Node.js (cssnano)
 
 ## Concepts
 
