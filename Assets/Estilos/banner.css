@@ -7,10 +7,13 @@
 }
 
 .banner {
-    background-color: var(--bkrx);
+    background-color: var(--rx);
     padding: 25px;
     text-align: center;
     padding-left: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 40px
 }
 
 .banner h1 {
@@ -27,8 +30,8 @@
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: var(--rx);
-    color: var(--bk);
+    background-color: var(--bkrx);
+    color: var(--wt);
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
