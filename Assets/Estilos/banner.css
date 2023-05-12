@@ -1,5 +1,13 @@
+:root{
+    --rx: #9747FF;
+    --bkrx: #3F0071;
+    --wt: #ffffff;
+    --bk: #1E1E1E;
+    --gradient: linear-gradient(45deg, #C73EF9 40%, #9747FF 100%);
+}
+
 .banner {
-    background-color: #eb1deb;
+    background-color: var(--bkrx);
     padding: 25px;
     text-align: center;
     padding-left: 10px;
@@ -7,20 +15,20 @@
 
 .banner h1 {
     font-size: 24px;
-    color: #ffffff;
+    color: var(--wt);
 }
 
 .banner p {
     font-size: 18px;
-    color: #000000;
+    color: var(--bk);
 }
 
 .banner a {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #941294;
-    color: #000000;
+    background-color: var(--rx);
+    color: var(--bk);
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
