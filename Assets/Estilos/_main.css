@@ -40,10 +40,6 @@ html{
     
 }
 
-body {
-    background: var(--gradient);
-}
-
 header{
     background-color: var(--bk);
     position: fixed;
