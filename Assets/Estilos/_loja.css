@@ -36,7 +36,7 @@ html{
 }
 
 body {
-    background: var(--gradient);
+    background: var(--wt);
 }
 
 header{
@@ -90,11 +90,13 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    flex: 1;
 }
 
-section{
-    margin: 2rem 2rem;
+main section{
+    margin-top: 180px;
+    margin-left: 10px;
+    width: 100vh;
+    height: 300px;
 }
 
 header section.mini{
@@ -182,6 +184,7 @@ a.desejos{
     border-radius: 10px;
     flex-direction: column;
     background-color: var(--bk);
+    transition: 0.05s;
 }
 
 #Central div{
@@ -191,6 +194,7 @@ a.desejos{
 
 #Central div p{
     font-size: 14px;
+    font-weight: bold;
 }
 #Central div p.minimal{
     font-size: 10px;
@@ -232,6 +236,7 @@ a.desejos{
     border-radius: 10px;
     flex-direction: column;
     background-color: var(--bk);
+    transition: 0.05s;
 }
 
 #Profile div{
@@ -239,6 +244,11 @@ a.desejos{
     margin: 0px 10px 0px 10px;
     gap: 20px;
     align-items: center;
+}
+
+#Profile div:hover{
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 #Profile ion-icon{
@@ -255,4 +265,203 @@ a.desejos{
 .ParaCliente div.Carrinho ion-icon{
     font-size: 36px;
     margin: 8px;
+}
+
+footer{
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+footer .Superior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+footer .DadosdaEmpresa{
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer .Dados{
+    align-items: center;
+    width: 280px;
+    margin-bottom: 10px;
+}
+
+footer p.Endereço{
+    margin-left: 53px;
+}
+footer {
+    background-color: var(--bk);
+    height: 350px;
+}
+
+footer .Superior{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .inferior{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--wt);
+    margin-top: 30px;
+    gap: 25px;
+}
+
+footer .aviso{
+    font-size: 10px;
+    color: var(--wt);
+}
+
+footer .direitos{
+    font-size: 10px;
+    color: var(--wt);
+}
+
+footer .Institucional{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .DadosdaEmpresa{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: var(--wt);
+    font-size: 12px;
+    text-align: left;
+    border-bottom: 2px  solid var(--wt);
+}
+
+footer img{
+    width: 240px;
+    height: 160px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+footer .Dados {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    margin-top: 20px;
+}
+
+footer .RedeSocial{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0px 0px 0px;
+}
+
+footer .RedeSocial a{
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+footer .RedeSocial svg{
+    color: var(--rx);
+    margin-left: 5px;
+    margin-top: 5px;
+}
+ 
+footer .RedeSocial a:hover{
+    background-color: var(--wt);
+}
+
+footer nav{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav div{
+    color: var(--wt);
+    font-size: 16px;  
+    font-weight: bold;
+    width: 171px;
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
+
+footer nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    margin: 15px 10px 10px 10px;
+    text-align: left;
+}
+
+footer nav ul a{
+    color: var(--wt);
+    font-size: 14px;
+    transition: .3s;
+}
+
+footer nav ul a:hover{
+    color: var(--rx);
+    opacity: 0.7;
+}
+
+footer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--wt);
+}
+
+form label{
+    margin-bottom: 10px;
+}
+
+form input{
+    max-width: 200px;
+    outline: none;
+    height: 30px;
+    border-radius: 30px;
+    border: 3px solid var(--bkrx);
+    padding: 10px 20px;
+}
+
+input[type=email]::placeholder{
+    color: var(--bkrx);
+    
+}
+
+input[type=email] {
+    color: var(--bkrx);
+    font-weight: 600;
+    font-size: 16px;
+    caret-color: var(--bkrx);
+}
+
+form button{
+    background: linear-gradient(45deg, #9747FF 40% , #C73EF9 100%);
+    color: var(--wt);
+    border: 2px solid var(--wt);
+    height: 30px;
+    border-radius: 15px;
+    margin: 10px 0px;
+}
+
+.Slogan{
+    font-weight: bold;
+}
+
+.CNPJ{
+    margin-bottom: 10px;
 }
