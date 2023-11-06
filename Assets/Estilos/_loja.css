@@ -90,6 +90,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    flex: 1;
 }
 
 section{
@@ -156,39 +157,64 @@ a.desejos{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 30px;
-    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 150px;
 }
 
 .ParaCliente div{
     display: flex;
     flex-direction: row;
     cursor: pointer;
-    transition: 0.3s;
 }
-
-.ParaCliente div:hover{
-    opacity: 0.7;
-
-}
-
 .ParaCliente div.Central{
-    width: 180px;
-    gap: 20px;
+    width: 230px;
     color: var(--wt);
+    gap: 20px;
+    flex-direction: column;
 }
 
-.ParaCliente div.Central p{
+#Central{
+    width: 230px;
+    height: 280px;
+    justify-content: space-around;
+    visibility: visible;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: var(--bk);
+}
+
+#Central div{
+    flex-direction: column;
+    margin: 0px 10px 0px 10px;
+}
+
+#Central div p{
+    font-size: 14px;
+}
+#Central div p.minimal{
+    font-size: 10px;
+}
+
+.ParaCliente div.Central label{
+    width: 180px;
+    color: var(--wt);
+    gap: 20px;
+}
+
+.ParaCliente div.Central p {
     margin-top: 5px;
     color: var(--wt);
 }
 .ParaCliente div.Central ion-icon{
     font-size: 48px;
+    color: var(--wt);
 }
 .ParaCliente div.Profile{
     width: 250px;
     gap: 20px;
     color: var(--wt);
+    flex-direction: column;
 }
 .ParaCliente div.Profile p{
     margin-top: 5px;
@@ -196,6 +222,28 @@ a.desejos{
 }
 .ParaCliente div.Profile ion-icon{
     font-size: 48px;
+}
+
+#Profile{
+    width: 230px;
+    height: 180px;
+    justify-content: space-around;
+    visibility: visible;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: var(--bk);
+}
+
+#Profile div{
+    flex-direction: row;
+    margin: 0px 10px 0px 10px;
+    gap: 20px;
+    align-items: center;
+}
+
+#Profile ion-icon{
+    font-size: 20px;
+    color: var(--wt);
 }
 
 .ParaCliente div.Carrinho {

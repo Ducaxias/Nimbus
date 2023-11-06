@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="./Assets/Estilos/_loja.css">
     <title>Document</title>
 </head>
-<body>
-    
+<body>   
     <header>
         <section class="mini">
             <div class="S_Usuario">
@@ -46,13 +45,55 @@
                 </button>
             </div>
             <section class="ParaCliente">
-                <div class="Central">
-                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-                    <p>Central de<br><span class="important">Atendimento</span></p>
+                <div class="Central" onmouseover="ExibirModal()" onmouseout="NExibir()">
+                    <div class="label">
+                        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                        <p>Central de<br><span class="important">Atendimento</span></p>
+                    </div>
+                    <div id="Central">
+                        <div>
+                            <p>Compre por Telefone</p>
+                            <p>(81)XXXXX-XXXX</p>
+                        </div>
+                        <div>
+                            <p>Estamos no whatsapp</p>
+                            <p>(81)XXXXX-XXXX</p>
+                            <p>(81)XXXXX-XXXX</p>
+                        </div>
+                        <div>
+                            <p>Envie uma Mensagem</p>
+                            <p>NimbusContato@gmail.com</p>
+                        </div>
+                        <div>
+                            <p>Horário de Atendimento</p>
+                            <p class="minimal">Seg. à Sexta 8:00 às 18:00</p>
+                            <p class="minimal">Sábado, Domingo, e Feriados 8:00 às 12:00</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="Profile">
-                    <ion-icon name="person-circle-outline"></ion-icon>
-                    <p> Bem vindo(a) <br> <span class="important">Entrar</span> ou <span class="important">Cadastrar</span></p>
+                <div class="Profile"  onmouseover="ExibirProfile()" onmouseout="NExibirProfile()">
+                    <div class="label">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                        <p> Bem vindo(a) <br> <span class="important">Entrar</span> ou <span class="important">Cadastrar</span></p>
+                    </div>                    
+                    <div id="Profile">
+                        <div>
+                            <ion-icon name="person"></ion-icon>
+                            <p>Olá, <span class="important">Visitante</span></p>
+                        </div>
+                        <div>
+                            <ion-icon name="briefcase"></ion-icon>
+                            <p>Meus pedidos</p>
+                        </div>
+                        <div>
+                            <ion-icon name="heart"></ion-icon>
+                            <p>Desejos</p>
+                        </div>
+                        <div>
+                            <ion-icon name="jet"></ion-icon>
+                            <p>Rastrear</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="Carrinho">
                     <ion-icon name="cart-outline"></ion-icon>
@@ -90,7 +131,10 @@
             </div>
         </section>
     </main>
+    <footer>
 
+    </footer>
+    <script src="/Assets/js/modal.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>   
