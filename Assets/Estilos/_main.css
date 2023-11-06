@@ -117,6 +117,10 @@ section{
     text-align: start;
 }
 
+h1{
+    color:#000000;
+}
+
 .texto {
     font-size: 20px;
     margin-top: 40px;
