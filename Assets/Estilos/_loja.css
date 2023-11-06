@@ -178,7 +178,7 @@ a.desejos{
     width: 230px;
     height: 280px;
     justify-content: space-around;
-    visibility: visible;
+    visibility: hidden;
     border-radius: 10px;
     flex-direction: column;
     background-color: var(--bk);
@@ -228,7 +228,7 @@ a.desejos{
     width: 230px;
     height: 180px;
     justify-content: space-around;
-    visibility: visible;
+    visibility: hidden;
     border-radius: 10px;
     flex-direction: column;
     background-color: var(--bk);
