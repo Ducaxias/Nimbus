@@ -102,32 +102,12 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="Aria">
+            <h3 class="titleSection">Destaques da Semana</h3>   
             <div class="List" id="produtos">
-                <p class="titleSection">Livros</p>   
             </div>
         </section>
         <section>
-            <p class="titleSection">Hq's</p>
-            <div class="List">
-                <div class="card">
-                </div>   
-            </div>
-        </section>
-        <section>
-            <p class="titleSection">Action Figures</p>
-            <div class="List">
-                <div class="card">
-                </div>   
-            </div>
-        </section>
-        <section>
-            <p class="titleSection">periféricos</p>
-            <div class="List">
-                <div class="card">
-                </div>   
-            </div>
-        </section>
     </main>
     <footer>
         <div class="Superior">
@@ -210,6 +190,15 @@
             </div>
         </div>
     </footer>
+    <script>
+        const $slide = document.getElementsByClassName("js-carrossel-slide")
+
+        new Glider($slide , {
+            slidesToShow: 3,
+            slidesScroll: 1,
+            draggrable: true,
+        })
+    </script>
     <script src="/Assets/js/modal.js"></script>
     <script src="/Assets/js/produtos.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
