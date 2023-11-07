@@ -573,4 +573,114 @@ form button{
         flex-direction: column;
     }
 }
+/*Tela de Login*/
+.login{
+    background: linear-gradient(49deg, rgba(199,62,249,1) 13%, rgba(151,71,255,1) 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 80px;
+    border-radius: 15px;
+    font: 'Georgia', sans-serif;
+}
+.login h1{
+    padding-bottom: 10px;
+}
+.login input{
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
 
+/*Tela de Cadastro*/
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(49deg, rgba(199,62,249,1) 13%, rgba(151,71,255,1) 100%);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+    margin-top: 250px;
+@CCZer0	Reply…
+}
+fieldset{
+    border: 3px solid rgba(199,62,249,1);
+    padding: 12px;
+}
+legend{
+    border: 1px solid rgba(199,62,249,1);
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(199,62,249,1);
+    border-radius: 8px;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+#data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+#submit{
+    background: black;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+    background-image: linear-gradient(216deg, rgba(199,62,249,1) 13%, rgba(78,5,172,1) 100%);
+}
+button{
+    background-color: #9747FF;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #a45fff;
+}
+.logo-numbus{
+    display: block;
+    margin-top: 150px;
+    width: 350px;
+    height: 250px;
+}
+#topo{
+    display: flex;
+}

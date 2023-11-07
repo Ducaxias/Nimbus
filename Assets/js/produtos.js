@@ -1,4 +1,5 @@
 const Produtos = [
+  
     {
       id: 0,
       nome: "Corto Maltese <br> Balada do mar salgado",
@@ -23,7 +24,22 @@ const Produtos = [
       preço: 40.00,
       quantidade: 0
     },
-    
+    {
+      id: 3,
+      nome: "HQ Batman 1ª Edição",
+      autor: "Panini Comics",
+      img: 'Assets/Images/Batman_(revista_em_quadrinhos).jpg',
+      preço: 40.00,
+      quantidade: 0
+    },
+    {
+      id: 3,
+      nome: "Mouse RedDragon Cobra (Branco)",
+      autor: "RedDragon",
+      img: "Assets/Images/m711w-fps.jpg",
+      preço: 120.00,
+      quantidade: 0
+    },
 
 ]
 

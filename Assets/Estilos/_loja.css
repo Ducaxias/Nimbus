@@ -56,6 +56,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 12vh;
+    padding: 10px;
 }
 
 img.logo{
@@ -159,6 +160,7 @@ main img{
     justify-content: space-around;
     gap: 20px;
     width: 90vh;
+    margin-left: 340px;
 
 }
 
