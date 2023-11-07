@@ -6,6 +6,10 @@
     font-family: "Georgia", "Lora", "Open Sans", "sans-serif";
 }
 
+.titleSection{
+    color:#ffffff;
+}
+
 :root{
     --rx: #9747FF;
     --bkrx: #3F0071;
