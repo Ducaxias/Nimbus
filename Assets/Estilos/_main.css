@@ -113,12 +113,8 @@ section{
     margin-bottom: 15px;
     line-height: 105%;
     font-size: 32px;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: start;
-}
-
-h1{
-    color:#000000;
 }
 
 .texto {
@@ -126,6 +122,7 @@ h1{
     margin-top: 40px;
     color: var(--wt);
     text-align: justify;
+    color:#000000;
 }
 
 a.buttonP{
@@ -147,10 +144,11 @@ a span{
 .buttonP {
     display: block;
     border: 2px solid var(--wt);
-    width: 520px;
+    width: 550px;
     height: 30px;
     background: var(--gradient);
     border-radius: 20px;
+    border-color: #000000;
 }
 
 .produtos {
