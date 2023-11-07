@@ -69,3 +69,5 @@ for(var i= 0; i < links.length; i++){
     return false;
   });
 };
+
+var cont = 1;
