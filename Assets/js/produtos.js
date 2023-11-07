@@ -24,37 +24,6 @@ const Produtos = [
       quantidade: 0
     },
     
-    
-
-]
-
-const HQ = [
-  {
-    id: 0,
-    nome: "Homem Aranha",
-    autor: "Lucas Farias Lima",
-    img: 'Assets/Images/Corto.jpeg',
-    preço: 25,
-    quantidade: 0
-  },
-  {
-    id: 1,
-    nome: "Batman",
-    autor: "Lukinhas",
-    img: 'Assets/Images/Paraiso.jpeg',
-    preço: 32,
-    quantidade: 0
-  },
-  {
-    id: 2,
-    nome: "Capitão Cueca",
-    autor: "Luan",
-    img: 'Assets/Images/Quincas.jpeg',
-    preço: 40.00,
-    quantidade: 0
-  },
-  
-  
 
 ]
 
@@ -62,27 +31,6 @@ Lojinha = () => {
       var containerProdutos = document.getElementById('produtos');
       Produtos.map((val) => {
         containerProdutos.innerHTML+= `
-            <div class = "produto-single c-carrossel-simple">
-              <a class="Clicavel" key=`+val.id+` href="#">
-                <img src="`+val.img+`"/>
-                <div class="descricao">
-                  <p>`+val.nome+`</p>
-                  <p class="autor">`+val.autor+`</p>
-                </div>
-                <div>
-                  <p class="preco"> R$`+val.preço+`</p>
-                </div>
-              </a>
-            </div>
-        `;
-      })
-    }
-    Lojinha(); 
-
-    HQ = () => {
-      var containerHQ = document.getElementById('HQ');
-      HQ.map((val) => {
-        containerHQ.innerHTML+= `
             <div class = "produto-single c-carrossel-simple">
               <a class="Clicavel" key=`+val.id+` href="#">
                 <img src="`+val.img+`"/>
