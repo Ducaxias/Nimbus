@@ -48,7 +48,7 @@ Lojinha = () => {
       Produtos.map((val) => {
         containerProdutos.innerHTML+= `
             <div class = "produto-single c-carrossel-simple">
-              <a class="Clicavel" key=`+val.id+` href="#">
+              <a class="Clicavel" key=`+val.id+` href="hq_batman.html">
                 <img src="`+val.img+`"/>
                 <div class="descricao">
                   <p>`+val.nome+`</p>
