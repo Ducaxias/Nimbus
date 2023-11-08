@@ -589,9 +589,13 @@ form button{
 }
 .login input{
     padding: 15px;
-    border: none;
+    border: 110px;
     outline: none;
     font-size: 15px;
+}
+
+a button{
+    padding-left: 210px;
 }
 
 /*Tela de Cadastro*/
