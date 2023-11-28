@@ -38,33 +38,16 @@
             </ul>
         </nav>
     </header>
-    <div class="login">
-        <h1>Login</h1>
-        <input type="text" placeholder="Nome">
-        <br><br>
-        <input type="password" placeholder="Senha">
-        <br><br>
-        <a href="loja.html"><button>Enviar</button></a>
-    
-    </div>
-    <script src="Assets/js/menu.js"></script>
-    <script>
-        const cartItems = [];
-    
-        function addToCart(item) {
-            cartItems.push(item);
-            updateCart();
-        }
-    
-        function updateCart() {
-            const cartList = document.getElementById("cart-items");
-            cartList.innerHTML = "";
-            cartItems.forEach(item => {
-                const li = document.createElement("li");
-                li.textContent = item;
-                cartList.appendChild(li);
-            });
-        }
-    </script>
+    <main>
+        <section class="main_login">
+            <form class="login">
+                <input type="text" placeholder="Email"/>
+                <input type="text" placeholder="Senha"/>
+                <div class="button_submit" onclick="">
+                    <p>continuar</p>
+                </div>
+            </form>
+        </section>
+    </main
 </body>
 </html>
